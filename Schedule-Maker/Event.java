@@ -3,7 +3,7 @@ class Event {
   private int hour;
   private int minute;
   private String name;
-  private String sminute;
+  private String strMinute;
   private String ampm;
 
 
@@ -17,9 +17,9 @@ class Event {
     if(mampm.equals("pm")) {
       hour += 12;
     }
-    sminute = Integer.toString(minute);
+    strMinute = Integer.toString(minute);
     if(minute < 10) {
-      sminute = "0" + sminute;
+      strMinute = "0" + strMinute;
     }
   }
 
@@ -32,7 +32,7 @@ class Event {
     }
 
     public String getMinute() {
-      return sminute;
+      return strMinute;
     }
 
     public String getName() {
