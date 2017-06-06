@@ -11,7 +11,7 @@ public class Main {
 
 		// Game variables
 		String[] enemies = { "Zombie", "Mutant", "Ghoul" };
-		String[] bossEnemies = { "Abodminable Snowman", "Mutant Bear", "Dragon", "Manbearpig", "Giant Cave Spider"};
+		String[] bossEnemies = { "Abodminable Snowman", "Dragon", "Manbearpig", "Giant Cave Spider"};
 		int maxEnemyHealth = 50;
 		int enemyHealth = 0;
 		int enemyAttackDamage = 25;
@@ -41,7 +41,7 @@ public class Main {
 
 		// Label
 		GAME: while (running) {
-
+			inCave = false;
 			if(Math.random() < .1) {
 				System.out.println("You stumble across the mouth of a cave. Would you like to \n\t1. Enter the cave \n\t2. Continue exploring the wasteland");
 				input = in.nextLine();
@@ -53,10 +53,11 @@ public class Main {
 					inCave = true;
 					break;
 				case "2" :
+					inCave = false;	
 					break;
 				}
 
-			} else {
+			} else if(!inCave) {
 
 			enemyHealth = rand.nextInt(maxEnemyHealth);
 			enemy = enemies[rand.nextInt(enemies.length)];
