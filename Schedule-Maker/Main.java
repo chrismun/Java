@@ -18,7 +18,7 @@ class Main {
   String outAMPM;
 
 
-  // Gets the events from the user
+  // Gets the events from the user, should add some capability to ask if they have any MORE events
   do {
     System.out.println("Do you have any events? (yes/no)");
     userInput = scan.nextLine().trim().toLowerCase();
