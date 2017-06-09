@@ -1,0 +1,38 @@
+public class Nested-Switch {
+        public static void main(String[] args) {
+               
+         // switch statements can be nested, as seen below 
+                 
+                 int num1 = 0;
+                 int num2 = 1;
+                 
+                 switch(num1)
+                 {
+                        case 0: 
+                                switch(num2)     // no issues putting a switch statement inside of a case
+                                {
+                                        case 0:
+                                                System.out.println("num1 is 0, num2 is 0");
+                                                break;
+                                       
+                                        case 1:
+                                                System.out.println("num1 is 0, num2 is 1");
+                                                break;
+                                               
+                                        default:
+                                                System.out.println("No matching input");
+                                }
+                               
+                                break;
+                         // default occurs when no input matches
+                        default:
+                                System.out.println("No matching input");
+                       
+                 }
+               
+        }
+}
+ 
+/*
+Output would be "num1 is 0, num2 is 1"
+*/
