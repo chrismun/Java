@@ -7,15 +7,9 @@ class Main {
   ArrayList<Event> events = new ArrayList<Event>();   //all the events added here
   ArrayList<Event> thisHour = new ArrayList<Event>(); //used for printing events each hour
   String userInput = "";
-  String userInput2;
   boolean anotherEvent = true;
-  String name;
-  int hour;
-  int minute;
-  String aHour;
-  String aMinute;
-  String ampm;
-  String outAMPM;
+  String name, aHour, aMinute, ampm, outAMPM, userInput2;
+  int hour, minute;
 
 
   // Gets the events from the user, should add some capability to ask if they have any MORE events
