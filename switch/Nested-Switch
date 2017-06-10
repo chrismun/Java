@@ -24,6 +24,8 @@ public class Nested-Switch {
                                 }
                                
                                 break;
+                        case 1:
+                                break;
                          // default occurs when no input matches
                         default:
                                 System.out.println("No matching input");
