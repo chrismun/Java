@@ -5,8 +5,7 @@ class Main {
     Scanner scan = new Scanner(System.in);
     System.out.println("Enter a number in base 8:");
     int octal = scan.nextInt();
-    int decimal;
-    int octal1;
+    int decimal, octal1;
     int digit8 = octal % 10;
     octal1 = (octal - digit8) / 10;
     int digit7 = octal1 % 10;
