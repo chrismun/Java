@@ -24,7 +24,7 @@ class Main {
     decimal = (int) (digit1 * Math.pow(8,7) + digit2 * Math.pow(8,6) +  digit3 * Math.pow(8,5) +  digit4 * Math.pow(8,4) +  digit5 * Math.pow(8,3) +  digit6 * Math.pow(8,2) +  digit7 * Math.pow(8,1) + digit8 * Math.pow(8,0));
     if(digit1 >= 8 || digit2 >= 8 || digit3 >= 8 || digit4 >= 8 || digit5 >= 8 || digit6 >= 8 || digit7 >= 8 || digit8 >= 8) {
       System.out.print("ERROR: Incorrect Octal Format"); } else {
-        System.out.print(decimal);
+        System.out.print(octal + "in decimal format is: " + decimal);
       }
   }
 }
