@@ -1,5 +1,5 @@
 // Made junior year high school as practice for AP Comp Sci A
-// demonstrates use of if statements
+// demonstrates use of if statements (though not effectively)
 import java.util.Scanner;
 import java.lang.Math;
  
