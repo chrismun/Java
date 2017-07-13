@@ -1,4 +1,4 @@
-class Vehicle {
+class Vehicle {  //represents a vehicle that moves between 20 and -20, to illustrate OOP 
   public int location;
   
   public Vehicle() {
