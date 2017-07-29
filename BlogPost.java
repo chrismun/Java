@@ -1,5 +1,3 @@
-package com.example;
-
 import java.io.Serializable;
 import java.util.Date;
 
